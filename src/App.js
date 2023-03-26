@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import UserForm from './components/UserForm';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import NavBar from './components/pixa_bay/navBar/NavBar';
+import Search from './components/pixa_bay/search/Search'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App">
+    //   <UserForm />
+    // </div>
+    <MuiThemeProvider>
+      <div>
+        <NavBar />
+        <Search />
+      </div>
+    </MuiThemeProvider>
   );
 }
 
